@@ -13,6 +13,7 @@ import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
+import org.springframework.integration.redis.util.RedisLockRegistry;
 import org.springframework.scripting.support.ResourceScriptSource;
 
 @Configuration
@@ -45,5 +46,11 @@ public class RedisConfig {
         redisScript.setResultType(Boolean.class);
         return redisScript;
     }
+
+    @Bean
+    public RedisLockRegistry redisLockRegistry(JedisConnectionFactory jedisConnectionFactory) {
+        return new RedisLockRegistry(jedisConnectionFactory, "REDIS_LOCK");
+    }
+
 }
 

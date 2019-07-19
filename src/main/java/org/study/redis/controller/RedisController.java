@@ -7,11 +7,15 @@ import org.springframework.data.redis.core.ListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
+import org.springframework.integration.redis.util.RedisLockRegistry;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.study.redis.service.UserService;
 
 import java.util.Collections;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
 
 @RestController
 public class RedisController {
@@ -22,6 +26,9 @@ public class RedisController {
 
     @Autowired
     private DefaultRedisScript<Boolean> redisScript;
+
+    @Autowired
+    private RedisLockRegistry redisLockRegistry;
 
     @RequestMapping("redis")
     public String getKey() {
@@ -66,7 +73,28 @@ public class RedisController {
         String s1 = valueOperations.get(key);
         System.out.println(s1);
 
-        return null;
+        return s1;
+    }
+
+
+    @Autowired
+    private UserService userService;
+
+    //http://localhost:9000/redisLock?id=1
+    @RequestMapping("/redisLock")
+    public String redisLock(Integer id){
+        Lock lock = redisLockRegistry.obtain("USER_ID@" + id);
+        for (int i = 0; i < 3; i++) {
+            new Thread(() -> {
+                lock.lock();
+                System.out.println(Thread.currentThread().getName() + " begin " + new Date());
+                userService.update();
+                System.out.println(Thread.currentThread().getName() + " end " + new Date());
+                lock.unlock();
+            }).start();
+        }
+
+        return "ok";
     }
 
 }
