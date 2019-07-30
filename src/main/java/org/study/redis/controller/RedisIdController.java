@@ -3,10 +3,9 @@ package org.study.redis.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.study.redis.util.RedisId;
+import org.study.redis.component.RedisId;
 
 import java.time.Duration;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @RestController
