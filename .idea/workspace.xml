@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb45982-3b2b-4977-a974-787a80cc0b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/study/redis/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/study/redis/cfg/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/study/redis/cfg/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/study/redis/controller/RedisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/study/redis/controller/RedisController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/study/redis/controller/RedisIdController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/study/redis/util/RedisId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lua/redis-id.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/study/redis/controller/RedisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/study/redis/controller/RedisController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,33 +18,41 @@
     <session id="-1131788228">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="8" />
-          <entry key="xml" value="1" />
+          <entry key="RedisLockRegistry" value="1" />
+          <entry key="class" value="4" />
+          <entry key="java" value="28" />
+          <entry key="lua" value="3" />
+          <entry key="xml" value="2" />
+          <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="8" />
-          <entry key="XML" value="1" />
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="28" />
+          <entry key="UML" value="1" />
+          <entry key="XML" value="2" />
+          <entry key="YAML" value="2" />
+          <entry key="lua" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="241" />
+          <entry key="java" value="1038" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="241" />
+          <entry key="JAVA" value="1038" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -54,48 +62,53 @@
     <favorites_list name="redis-demo" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/util/RedisId.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/cfg/RedisConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="449">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1942#1943#0" expanded="true" />
+                <element signature="e#1982#1983#0" expanded="true" />
+                <element signature="e#2018#2019#0" expanded="true" />
+                <element signature="e#2059#2060#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/controller/RedisController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/controller/RedisIdController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="100" column="8" lean-forward="true" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+            <state relative-caret-position="162">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/service/UserService.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/time/LocalDate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="309">
+              <caret line="1613" selection-start-line="1613" selection-end-line="1613" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-redis/5.1.0.RELEASE/spring-integration-redis-5.1.0.RELEASE-sources.jar!/org/springframework/integration/redis/util/RedisLockRegistry.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/time/Duration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="75" column="3" lean-forward="true" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
+            <state relative-caret-position="176">
+              <caret line="476" column="17" lean-forward="true" selection-start-line="476" selection-start-column="17" selection-end-line="476" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -116,9 +129,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/study/redis/cfg/RedisConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/study/redis/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/study/redis/cfg/RedisConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/study/redis/controller/RedisController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/study/redis/util/RedisId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/study/redis/controller/RedisIdController.java" />
       </list>
     </option>
   </component>
@@ -146,9 +161,12 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,7 +229,84 @@
             </path>
             <path>
               <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lua" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="time" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="locks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -251,6 +346,49 @@
             <path>
               <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.data:spring-data-redis:2.1.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-data-redis-2.1.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.integration:spring-integration-core:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.integration:spring-integration-core:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-integration-core-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.integration:spring-integration-core:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-integration-core-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.integration:spring-integration-core:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-integration-core-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.integration:spring-integration-core:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-integration-core-5.1.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="locks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Maven: org.springframework.integration:spring-integration-redis:5.1.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
@@ -278,8 +416,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +425,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563527069427" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564453202518" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -306,7 +443,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.RedisApplication">
+    <configuration name="RedisId" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.study.redis.util.RedisId" />
+      <module name="redis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.study.redis.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="redis-demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.study.redis.RedisApplication" />
@@ -314,6 +464,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.RedisApplication" />
+      <item itemvalue="Application.RedisId" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RedisId" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -325,51 +484,53 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563526055066</updated>
-      <workItem from="1563526056205" duration="969000" />
+      <workItem from="1563526056205" duration="4060000" />
+      <workItem from="1564388496220" duration="8288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="969000" />
+    <option name="totallyTimeSpent" value="12348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" sideWeight="0.50111854" side_tool="true" weight="0.25" />
-      <window_info id="Capture Tool" />
-      <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49906892" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" sideWeight="0.5009311" side_tool="true" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Tail" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="MyBatis Log" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49772727" visible="true" weight="0.25266525" />
+      <window_info id="Structure" order="1" sideWeight="0.5022727" side_tool="true" visible="true" weight="0.25266525" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.50111854" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="LuaCheck" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39932886" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32997763" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.50782996" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32997763" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="MyBatis Log" order="14" />
+      <window_info anchor="bottom" id="Tail" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,23 +542,49 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/study/redis/controller/RedisController.java</url>
-          <line>95</line>
+          <line>88</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-redis/5.1.0.RELEASE/spring-integration-redis-5.1.0.RELEASE-sources.jar!/org/springframework/integration/redis/util/RedisLockRegistry.java</url>
+          <line>203</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-redis/5.1.0.RELEASE/spring-integration-redis-5.1.0.RELEASE-sources.jar!/org/springframework/integration/redis/util/RedisLockRegistry.java</url>
+          <line>284</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-redis/5.1.0.RELEASE/spring-integration-redis-5.1.0.RELEASE-sources.jar!/org/springframework/integration/redis/util/RedisLockRegistry.java</url>
+          <line>295</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-redis/5.1.0.RELEASE/spring-integration-redis-5.1.0.RELEASE-sources.jar!/org/springframework/integration/redis/util/RedisLockRegistry.java</url>
+          <line>323</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/study/redis/util/RedisId.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/RedisApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.2.RELEASE/spring-data-redis-2.1.2.RELEASE-sources.jar!/org/springframework/data/redis/connection/RedisConnectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -419,27 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-redis/5.1.0.RELEASE/spring-integration-redis-5.1.0.RELEASE-sources.jar!/org/springframework/integration/redis/util/RedisLockRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="75" column="3" lean-forward="true" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/cfg/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -447,10 +613,222 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.2.RELEASE/spring-data-redis-2.1.2.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="347" lean-forward="true" selection-start-line="347" selection-end-line="347" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-core/5.1.0.RELEASE/spring-integration-core-5.1.0.RELEASE.jar!/org/springframework/integration/support/locks/LockRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-core/5.1.0.RELEASE/spring-integration-core-5.1.0.RELEASE.jar!/org/springframework/integration/support/locks/ExpirableLockRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.integration.redis.util.RedisLockRegistry">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.integration.redis.util.RedisLockRegistry</OriginalElement>
+          <nodes>
+            <node x="171.50000000000003" y="0.0">java.lang.FunctionalInterface</node>
+            <node x="83.5" y="240.0">org.springframework.integration.redis.util.RedisLockRegistry</node>
+            <node x="162.0" y="160.0">org.springframework.integration.support.locks.ExpirableLockRegistry</node>
+            <node x="189.0" y="80.0">org.springframework.integration.support.locks.LockRegistry</node>
+            <node x="0.0" y="160.0">org.springframework.beans.factory.DisposableBean</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.springframework.integration.support.locks.ExpirableLockRegistry" target="org.springframework.integration.support.locks.LockRegistry">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.integration.redis.util.RedisLockRegistry" target="org.springframework.integration.support.locks.ExpirableLockRegistry">
+              <point x="38.5" y="-15.0" />
+              <point x="199.0" y="215.0" />
+              <point x="250.0" y="215.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.integration.support.locks.LockRegistry" target="java.lang.FunctionalInterface">
+              <point x="1.4210854715202004E-14" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.integration.redis.util.RedisLockRegistry" target="org.springframework.beans.factory.DisposableBean">
+              <point x="-38.5" y="-15.0" />
+              <point x="122.0" y="215.0" />
+              <point x="71.0" y="215.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-294.0" y="133.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13566">
+          <caret line="740" selection-start-line="740" selection-end-line="747" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-core/5.1.0.RELEASE/spring-integration-core-5.1.0.RELEASE-sources.jar!/org/springframework/integration/support/locks/ExpirableLockRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-core/5.1.0.RELEASE/spring-integration-core-5.1.0.RELEASE-sources.jar!/org/springframework/integration/support/locks/LockRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/cfg/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/lua/redis-id.lua">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/RedisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/lua/checkandset.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/locks/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="320" column="12" selection-start-line="320" selection-start-column="12" selection-end-line="320" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/java/util/concurrent/TimeUnit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#8418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/TimeUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="220" column="16" selection-start-line="220" selection-start-column="16" selection-end-line="220" selection-end-column="16" />
+          <folding>
+            <element signature="e#8508#8509#0" expanded="true" />
+            <element signature="e#8555#8556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/controller/RedisController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="100" column="8" lean-forward="true" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+        <state relative-caret-position="373">
+          <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/integration/spring-integration-redis/5.1.0.RELEASE/spring-integration-redis-5.1.0.RELEASE-sources.jar!/org/springframework/integration/redis/util/RedisLockRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="274" selection-start-line="274" selection-end-line="274" />
+          <folding>
+            <element signature="e#6689#6690#0" expanded="true" />
+            <element signature="e#6735#6736#0" expanded="true" />
+            <element signature="e#6785#6786#0" expanded="true" />
+            <element signature="e#6848#6849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/util/RedisId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1982#1983#0" expanded="true" />
+            <element signature="e#2018#2019#0" expanded="true" />
+            <element signature="e#2059#2060#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/time/Duration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="476" column="17" lean-forward="true" selection-start-line="476" selection-start-column="17" selection-end-line="476" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/time/LocalDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="1613" selection-start-line="1613" selection-end-line="1613" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/study/redis/controller/RedisIdController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
