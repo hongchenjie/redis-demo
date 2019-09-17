@@ -30,6 +30,7 @@ public class RedisInitId {
     }
 
     public Long doGetId(String id, String initValue) {
+        //RedisTemplate.execute有问题，返回Object，不能返回范型Long
         return redisTemplate.execute(idScript, Collections.singletonList(id), initValue);
     }
 }
