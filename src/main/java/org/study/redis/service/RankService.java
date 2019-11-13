@@ -42,10 +42,11 @@ public class RankService {
     public void init() {
         ZSetOperations<String, Object> zSetOperations = redisTemplate.opsForZSet();
         LocalDate now = LocalDate.now();
-        for (int j = 0; j < 40; j++) {
+        for (int j = 0; j < 33; j++) {
             String set = INTEGRAL_RANK + ":" + now.minusDays(j).toString();
             for (int i = 0; i < 20; i++) {
                 //分数累加，用户不存在时，添加
+                //value必须是string
                 zSetOperations.incrementScore(set, RANDOM.nextInt(100) + "", i);
             }
         }
@@ -60,6 +61,7 @@ public class RankService {
         ZSetOperations<String, Object> zSetOperations = redisTemplate.opsForZSet();
         String day = INTEGRAL_RANK + ":" + LocalDate.now().toString();
         //索引从0开始，包含start和end，共end - start + 1个元素
+        //新的一天到来，没有积分数据时，不报错，返回空集合
         Set<ZSetOperations.TypedTuple<Object>> typedTuples = zSetOperations.reverseRangeWithScores(day, 0, 9);
         /*
          * [{
