@@ -21,4 +21,14 @@ public class CacheController {
     public Object get(Integer id) {
         return userService.get(id);
     }
+
+    @GetMapping("update")
+    public Object update(Integer id, String name) {
+        return userService.update(id, name);
+    }
+
+    @GetMapping("delete")
+    public Object delete(Integer id) {
+        return userService.delete(id);
+    }
 }
